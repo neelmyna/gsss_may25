@@ -481,4 +481,10 @@ Inside this package, create sub packages:
 	com.room.room_crud.repository
 	com.room.room_crud.service
 	com.room.room_crud.roomdao
+-----------------------------------
+Day1 Links:
+Day1 Student Feedback Link (Give it at 4 pm)
+https://tinyurl.com/day1-sfb
 
+Day1 Assessment (12 Questions, 10 Minutes)
+https://tinyurl.com/gsss-test1
