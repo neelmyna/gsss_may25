@@ -237,9 +237,9 @@ test>
 2. This command lists all the databases
 test> show dbs;
 test> show databases;
-Note: admin, local and config are the default DBs
+Note: admin, local and config are the default DBs which are created when mongodb is installed.
 
-3. This will connect to the specified DB if exists. Otherwise, it creates a new DB and connects to it.
+3. This will connect/switches to the specified DB if exists. Otherwise, it creates a new DB and then switches/connects to it.
 > use <db_name>;
 
 4. Connects to the DB nithin_db
@@ -297,7 +297,6 @@ students
 
 employees
 	_id
-	emp_code
 	name
 	designation
 	salary
