@@ -1,0 +1,485 @@
+Day1:
+session1
+App Installations (notepad++, eclipse sts, mongo server and compass, git, jdk17, postman)
+Git repo creation, pat creation and usage
+
+session2
+session1 recap (5 mins max)
+MongoDb Imporant Commands
+
+Session3
+session2 recap (5 mins max)
+MongoDb commands continued
+SpringBoot introduction (MVC model) + backend App creation Model Creation (1. spring.io 2. Using sts)
+Feedback + assessment + assignments + revision + Q&A
+
+Day2:
+session1
+Recap + JAM + Q&A (15 mins max)
+SpringBoot CRUD operations + Routes
+
+session2:
+session1 Recap
+SpringBoot CRUD operations Complete
+Controller class for all CRUD operations
+
+session3:
+session2 recap
+Bootstrap + JS
+Feedback + assessment + assignments + revision + Q&A
+
+day3:
+session1
+Recap + JAM + Q&A (15 mins max)
+Full Stack App Completion
+
+session2
+session1 recap
+Students are assigned an similar App and they create it using Copy paste of previous App
+
+session3
+App completion + manual evaluation/feedback
+Feedback + assessment + assignment (Create Documentation for the App and use draw.io for design and other diagrams) + revision + Q&A
+-----------------------------------------------------------
+day1
+session1:
+
+Git Commands:
+
+$ git status
+// To know the current status of our local Repo
+
+$ git clone <URL>
+// To download a Repo
+
+git clone https://github.com/neelmyna/vvce_mar25
+// Example to download the public repo
+
+$ git pull origin main
+// Command to download the updated Repo from the server to the local machine
+
+Configuration Commands: (To make our computer recognise our git account, we must run these 2 conguration commands)
+
+$ git config --global user.name "neelmyna"
+$ git config --global user.email "nithin@gmail.com"
+
+To Add the new files from laptop (local repo) to server (remote repo)
+
+$ git add .
+. here is the current working folder/directory
+This commands (stages) lists the files and folders that need to be updated in the remote repo.
+
+$ git commit -m "relevant message"
+This command creats an object which will be encrypted (safety) and consists of all the files that need to be updated to the remote repo
+
+$ git push origin <branch name>
+$ git push origin main
+
+This command finally copies the files from local repo to the remote repo (server).
+
+$ git clone https://<PAT>@repo_url
+git clone https://khrlgiufhsdkjvcbskbvdhkjfb@github.com/neelmyna/vvce_mar25
+
+This command is used to clone the remote repo to our system/laptop (creates the local repo) using the PAT. By doing so, we need not have to authenticate every time we try to push.
+--------------------
+STEPS TO CREATE A NEW PAT IN GITHUB:
+
+Login to github
+Right top corner Click on your profile
+Scroll down and click settings
+Next window, scroll down, on left bottom corner, click developer settings
+Next window, on top left, Click personal access tokens, Click again on token Classic
+Next window, Click on Generate new token button and select Tokens classic
+(Now u may be asked to enter password)
+Next, Add a note for the new PAT we are creating
+Select Expiry -> No expiration
+Select the Top check box named REPO
+Scroll down fully and click the green button (generate token)
+Now, copy the PAT
+Come to your gmail and mail the PAT to yourself or to one of your own account (Mail Subject: GIT PAT)
+
+Now, let us Sync our Remote Repo with Local Repo
+In other words, we are going to CLONE our Repo using the PAT.
+By doing so, we can perform Read-Write operations on our Remote Repo without having to Authenticate everytime.
+--------------------------
+App Installations:
+
+1. All the Apps must be  installed on their laptops before start of the training.
+2. Students must prefer bringing their laptops and chargers.
+3. Internet connectivity is mandatory (To download packages and run the apps, Git push and pull)
+
+Note: Download installer files (Avoid downloading zip files)
+After downloading all the installer files, cut and paste them into respective folders inside software folder. The aoftware folder is inside the C drive. Later students will double click and install all the Apps. This is well explained in the youtube video, it's link is shared.
+
+Note: To make use of the commands of respective Apps (code is the command to run VS code, java is the command to run java program etc.) from all the paths in the computer(C drive or D drive or any other path), you must add the path of installed apps into environment variables.
+
+These details are there in the below youtube videos:
+https://www.youtube.com/watch?v=h5Xr9_L4x7M&t=2s
+
+https://www.youtube.com/watch?v=EWttNzNBqBc&t=5s
+
+https://www.youtube.com/watch?v=Yt1whvpWMU0&t=20s
+
+https://www.youtube.com/watch?v=K5dWH6gJiRA
+
+Apps students must have on their systems:
+1. VS Code
+Google Search: Download vs code
+Click on Link: https://code.visualstudio.com/download
+Click on the OS you are using on your laptop
+The installer file will download. Cut and paste it from downloads folder into respective folder inside software folder in C drive.
+
+2. Git
+Google Search: Download Git
+Click on Link: https://git-scm.com/downloads
+Click on the OS you are using on your system
+
+3. Eclipse STS
+Google Search: Download Eclipse STS
+And download from spring.io/downloads
+Select the OS
+
+4. Notepad++
+Google Search: Download notepad++
+Click on Link: https://notepad-plus-plus.org/downloads/
+Click on:	   Download Notepad++ v8.7.7
+
+5. MongoDB
+Google Search: Download mongoDB server
+Click on Link: https://www.mongodb.com/try/download/community
+version: 8.0.5 (Package must be .msi)
+
+Google Search: Download mongoDB Compass
+Click on Link: https://www.mongodb.com/try/download/compass
+
+6. Postman
+Download, Install, Register and Use
+
+Note: Also download MongoDb Compass which is in the same web page as of MongoDb shell
+---------------------------------------------
+MONGO DB NOTES:
+https://www.mongodb.com/developer/products/mongodb/cheat-sheet/
+
+1. MongoDB is a Document based NOSQL (Not Only SQL). We can do RDBMS kind of DB creation and at the same time, Non-RDBMS DB can also be created.
+2. MongoDB uses JS syntax. This helps us in developing the End-to-End Full Stack App easily. Because, we may choose the Front-End and Back-End technologies which are also JS based.
+3. To work with MongoDB, we are given with a global object named "db" which we can call as mongoDB instance. Using this instance, we can call the library methods (built in functions).
+4. Since it is Djkn  ocument based, we can create the data in an Array, Multi Dimensional Array and also in Hierarchical DS (Tree).
+5. General purpose DB, Schema less model or flexible schema design, native aggregation, scalability and load balancing algorithms are inherent to mongo db, security features are available, mapReduce, Atlas.
+6. MongoDB is Document Based and Schema Free DB
+Other Examples for NoSQL DBs are:
+Graph based
+Document Based
+Key-Value Based
+Wide-Column Based
+
+SIMILARITY:
+RDBMS				MongoDB
+database			database
+Tables				collections
+row/tuple/object	document/record/object
+
+WORKING OF MONGO-DB
+-> It stores the data in J-son Format.
+-> The data is stored using Key-Value pairs
+-> In the back-end, the Json data is converted into Binary which we call as Bey-Son
+-> Data are stored as Documents. These Documents can be nested. And the documents are in turn are stored in collections.
+-> The documents thus are independent from documents in other collections.
+Since Mongo-DB is schema less, the data can be different and need not be similar.
+---------------------------------------------------------------
+INSTALLATION OF MongoDB ON WINDOWS:
+-> mongodb.com
+-> software -> community server -> download msi -> follow the steps and install
+-> install mongodb compass
+
+* C:\ -> Program files -> mongodb -> server -> <version No.> -> bin
+Go inside the folder bin and copy the path and add it to environment variables. (So that we can use the CLI mongo and mongod from anywhere/any path)
+-> mongod and mongos are executable files or the CLI
+-> mongod is a demon process that runs in background
+-> to check if mongo-db is installed, use the command:
+$ mongod --version
+$ mongosh --version
+-------------------------------------------------------------
+MongoDb TOC:
+Mongo Installation
+Create DB
+Drop DB
+Create Collection
+Drop Collection
+Data Types
+Insert Document to Collection
+Query Document
+Update Document
+Delete Document
+Indexing
+Aggregation
+Replication
+Sharding
+Deployment
+---------------------------------------
+mongod and mongosh are the 2 CLIs we get when we install MongoDB
+These 2 CLIs are found inside the mongoDB BIN folder.
+mongod is to start the server
+mongos is the client that connects to the server.
+mongosh is the command to run the mongo shell.
+----------------------------------------------
+CONNECT TO MongoDB:
+$ mongosh 
+#1. connects to mongodb://127.0.0.1:27017 by default
+
+#2. Connect using Compass (Add new Connection)
+
+MongoDB COMMANDS:
+1. To connect to the DB:
+$ mongosh
+We get the prompt:
+test>
+
+2. This command lists all the databases
+test> show dbs;
+test> show databases;
+Note: admin, local and config are the default DBs
+
+3. This will connect to the specified DB if exists. Otherwise, it creates a new DB and connects to it.
+> use <db_name>;
+
+4. Connects to the DB nithin_db
+> use nithin_db;
+Note: The prompt changes
+
+5. Command that lists all the collections from the DB we are present in.
+> show collections;
+
+6. Command that lists all the documents present inside the collection employees (inside nithin_db DB)
+> db.employees.find();
+
+The 1st field which is "_id" is auto generated by mongoDB which is 24 Alphanumeric code and its data type is ObjectId.
+
+7. Command to list the DB name we are currently present in
+> db;
+
+8. To exit the mongoDB Shell (Note: This will not stop the server)
+> exit;
+> quit;
+
+9. To clear the screen
+> cls;
+
+10. To create a new DB named nithin_db
+> create db nithin_db;
+
+Note: Until unless we have at least one collection or row/data in the database, the "show" command would not list the database name. However, the empty database will exist and we can switch to it by using the command "use"
+
+A Collection in MongoDB is Table in RDBMS
+A Document in MongoDB is a Row in RDBMS
+A DB in MongoDB is also called the same in RDBMS
+
+11. To create a Collection in a DB, we use the above command
+> db.createCollection('demo_collection')
+
+engg_students
+EnggStudent
+
+employees
+Employee 
+
+persons
+	_id
+	name
+	gender
+
+students
+	_id
+	name
+	semester
+	branch
+	avg_score
+	phone_num
+
+employees
+	_id
+	emp_code
+	name
+	designation
+	salary
+	years_of_exp
+	
+flights
+	_id
+	airline
+	code (airline_code_flight_code) 6E2617  AI567
+	source
+	destination
+	duration
+	fare
+	
+12. Alternate way to create a document in a collection
+> db.mtd_student.insert({id:101, name:'Nithin'})
+
+Here, mtd_student is the collection name and insert() method inserts a document (row) into the collection.
+Note: IF the collection doesn't exist, then a new collection is created by this command. Thus the above command creates, not just the document, but also the collection.
+
+13. Delete Database
+> db.dropDatabase('demo_db')
+
+14. Drop a collection named 'students'
+> db.students.drop()
+
+15. Show all Rows in a Collection 
+> db.students.find()
+
+16. Show all Rows in a Collection (Prettified)
+> db.students.find().pretty()
+
+17. Find the first row matching the object
+> db.students.findOne({name: 'nithin'})
+
+18. Insert One document into the collection named 'students'
+> db.students.insert({'name': 'reddy', 'lang': 'JavaScript', 'fee_paid': 5000})
+
+19. Insert many documents
+> db.comments.insertMany([
+	{
+		'name': 'Namratha',
+		'lang': 'JavaScript',
+		'fee_paid': 5000
+    }, 
+    {
+		'name': 'Nikhila',
+		'lang': 'Python',
+		'fee_paid': 3000
+    },
+    {
+		'name': 'Nishchitha',
+		'lang': 'Java',
+		'fee_paid': 4000
+	}
+])
+
+20. Search in a MongoDb Database
+> db.students.find({lang:'Python'})
+
+21. Limit the number of documents in the output:
+> db.students.find().limit(20)
+
+22. Count the number of documents in the output
+> db.students.find().count()
+> db.students.find().limit(3).count()
+
+23. update one document
+> db.students.updateOne({name:'nithin'},{$set:{avg_score:69.5}}) #update nithin's avg_score to 69.5
+
+24. to delete one document
+> db.students.deleteOne({name:'nikhila'})
+
+25.
+> 
+
+students:
+	id 1001
+	name
+	avg_score
+	semester
+	branch
+	phone_num
+	
+Practical:
+1. Create 20 student documents
+> db.students.insert({'id': 1001, 'name': 'krishna', 'avg_score': 89.80, 'semester': 7, 'branch': 'computer_science', 'phone_num': 9900990099});
+
+2. update one student's avg_score 
+> db.students.updateOne({id:1002},{$set:{avg_score:79.5}}) 
+
+3. update one student semester  
+> db.students.updateOne({id:1003},{$set:{semester:5}}) 
+
+4. Delete one student
+> db.students.deleteOne({id:1003}) 
+
+5. Query the students based on branch 
+> db.students.find({branch:'aiml'}
+
+6. Query the students based on semester
+> db.students.find({semester:7}
+
+7. Query the students based on avg_score
+> db.students.find({"avg_score": {"$gt": 60}})
+
+8. Query the students based on phone_num
+> db.students.find({phone_num: 7788990011})
+
+9. update multiple students semester by quering semester only.
+> db.students.updateMany({semester: 6}, {$set:{semester: 7}})
+
+10. Print all the students who have failed the exam:
+> db.students.find({"avg_score": {"$lt": 50}})
+
+11. To print distinct branches
+> db.students.distinct("branch")
+
+12. To find using multiple conditions (implicit logical and)
+> db.students.find({name: "nishchitha", avg_score: 72})
+-------------------------------------------------------
+SpringBoot Notes
+
+Step1: Create SprintBoot Project
+Step2: Configuration
+Step3: 
+
+Model:
+room: id, room_number, room_type, number_of_pax, price, amenities
+room_type: double, family, suite
+amenities: iron_box, tv, wifi, parking, laundary, gym, swimming_pool, lobby, hair_drier, shoe_polish, smoking_area, yoga_hall
+-----------------------------------
+Step1: Create SpringBoot Project
+
+1ST METHOD:
+Create a new Project using the STS IDE as follows:
+File Menu -> new -> Project -> type: starter
+Select spring starter project
+
+2ND METHOD:
+Create a new Springboot project via the browser using the URL: start.spring.io
+
+Project Maven
+Language: Java
+SpringBoot Version: 3.4.5
+Project Metadata:
+	Group: com.room
+	Artifact: room_crud
+	Name: room_crud
+	Description: demo project for springboot mongodb for crud operations
+	Package Name: com.room
+Packaging: jar
+Java version: 17
+
+DEPENDENCIES TO BE ADDED:
+springWeb
+springDataMongDb
+lombok
+SpringBoot Dev Tools
+
+Click the Button Generate or use (Ctrl + Enter Key)
+Now, Unzip the project file which we got from start.spring.io and cut and paste the folder inside our Repo folder.
+
+Open the STS IDE
+File Menu -> Open projects from file system -> Select the project folder
+------------------------------------------------
+STEP2: CONFIGURATION
+
+Now Open Application Properties under src/main/resources
+
+Add the mongodb URL:
+spring.data.mongodb.uri=mongodb://localhost:27017/nithin_db
+
+NOTE: To uniquely reach/connect/access any system (laptop or server or mobile_phone etc) we use IP address.
+Once we connect to a system using the IP address, we have to now connect to a particular application (browser, database_app) we need the PORT number.
+
+Now under src/main/java folder you can see an existing package named: com.room.room_crud
+
+Inside this package, create sub packages:
+	com.room.room_crud.controller
+	com.room.room_crud.model
+	com.room.room_crud.repository
+	com.room.room_crud.service
+	com.room.room_crud.roomdao
+
