@@ -488,3 +488,12 @@ https://tinyurl.com/day1-sfb
 
 Day1 Assessment (12 Questions, 10 Minutes)
 https://tinyurl.com/gsss-test1
+-------------------------------------------------
+DAY2 06-05-2025 TUESDAY
+
+db.employees.insert({name: 'manjula', designation: 'developer', salary: 155000, years_of_exp: 9});
+
+db.employees.insert({name: 'komala', designation: 'developer', salary: 99000});
+-----------------------
+JS Notes:
+
