@@ -497,3 +497,16 @@ db.employees.insert({name: 'komala', designation: 'developer', salary: 99000});
 -----------------------
 JS Notes:
 
+5 Steps to Solve a problem.
+
+1. Identify the I/P data and required information. Also assertain what should be the O/P. Isolate the unwanted information and data.
+OUTCOME: We know now what is the I/P, what should be the O/P and the supporting information.
+
+2. Use any idea (trial and error method) or technique or formula at your disposal and find a solution.
+
+3. Write down the solution in step by step procedure. Each step must be simple, finite and should solve one (atomic) piece of the problem.
+
+4. Write the Fakecode (pseudocode)
+Optional: Check if solution is given correct answer (Flowchart)
+
+5. Code it
