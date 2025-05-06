@@ -510,3 +510,17 @@ OUTCOME: We know now what is the I/P, what should be the O/P and the supporting 
 Optional: Check if solution is given correct answer (Flowchart)
 
 5. Code it
+-------------------------------------------
+FRONT END LEARNING:
+The extension "emmet" helps us in building the html code faster.
+
+To enable Bootstrap to our webpage:
+1. Add the CDN
+-----------------------------
+Customer class flieds:
+
+private int id;
+	private String name;
+	private String location;
+	private long phoneNumber;
+	private String email;
