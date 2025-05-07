@@ -524,3 +524,9 @@ private int id;
 	private String location;
 	private long phoneNumber;
 	private String email;
+
+Zero Arg Cons
+All Arg Cons
+getters-setters
+toString()
+hashcode() and equals()
