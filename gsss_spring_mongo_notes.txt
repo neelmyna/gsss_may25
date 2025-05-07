@@ -530,3 +530,11 @@ All Arg Cons
 getters-setters
 toString()
 hashcode() and equals()
+-----------------------------
+{
+	id : "A1",
+	"roomNumber" : "A001",
+	"numberOfPax" : 6,
+	"pricePerNight" : 1900,
+	"amenities" : ["iron-box", "hair-dryer"]
+}
